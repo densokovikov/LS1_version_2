@@ -1,0 +1,70 @@
+//- welcome.pug
+include common/_head
+body
+	<!--[if lt IE 7]>
+	<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+	<![endif]-->
+	.welcome-wrapper
+		.autoriz
+			a.autoriz__link Авторизироваться
+		.info-block
+				.info-block__front.turn-block
+					.front__ava
+						img.front__my-foto(src="../assets/img/my_foto.jpg",alt="my_foto")
+					.front__title Соковиков Денис
+					.front__description WEB-разработчик
+					.front__soc-icons
+						ul.front__icons-list
+							li.front__icons-item
+								a.front__icons__link(href="https://vk.com" target="_blank")
+									svg.icon.vk
+										use(xlink:href='assets/icons/sprite.svg#vk')
+							li.front__icons-item
+								a.front__icons__link(href="https://githab.com" target="_blank")
+									svg.icon.github
+										use(xlink:href='assets/icons/sprite.svg#github')
+							li.front__icons-item
+								a.front__icons__link(href="https://www.linkedin.com" target="_blank")
+									svg.icon.in
+										use(xlink:href='assets/icons/sprite.svg#in')
+					.front__menu
+						ul.front__menu-list
+							li.front__menu-item
+								a.front__menu-link(href="work.html" target="_blank") Мои работы
+							li.front__menu-item
+								a.front__menu-link(href="about.html" target="_blank") Обо мне
+							li.front__menu-item
+								a.front__menu-link(href="blog.html" target="_blank")  Блог
+				.info-block__back.turn-block
+					.back__title Авторизируйтесь
+					form.back__form-autoriz
+						.form-autoriz__body
+							.form-autoriz__wrap
+								.form-autoriz__box
+									svg.icon.login
+										use(xlink:href='assets/icons/sprite.svg#login')
+								input(type="text" class="form-autoriz__input" placeholder="логин")
+							.form_authoriz_wrap
+								.form-autoriz__box
+									svg.icon.pass
+										use(xlink:href='assets/icons/sprite.svg#password')
+								input(type="password" class="form-autoriz__input" placeholder="password")
+							input#man(type="checkbox" class="form-autoriz__hitten-input")
+							label.form-autoriz__man(for='man')
+								span.form-autoriz__check-icons
+									svg.icon.chk
+										use(xlink:href="assets/icons/sprite.svg#check")
+							.form-autoriz__robot Вы точно не робот
+							.form-autoriz__radios-form
+								input#yes(type='radio' name='sure' value='yes')
+								label.form-autoriz__radio_f(for='yes') Да
+								input#no(type='radio' name='sure' value='no')
+								label.form-autoriz__radio_f(for='no') Не уверен
+							span.form-autoriz__check-text я человек
+					ul.form-autoriz__menu-list
+						li.form-autoriz__menu-item
+							a.form-autoriz__menu-link На главную
+						li.form-autoriz__menu-item
+							a.form-autoriz__menu-link(href='#!' target="_blank") Войти
+		footer.welcome-footer
+			.welcome-footer__text © Соковиков Денис | создано с любовью в LoftSchool | 2017

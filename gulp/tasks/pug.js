@@ -2,11 +2,12 @@
 
 module.exports = function() {
   $.gulp.task('pug', function() {
-    return $.gulp.src('./source/template/pages/*.pug')
+    return $.gulp.src($.path.template)
       .pipe($.gp.pug({ pretty: true }))
       .on('error', $.gp.notify.onError(function(error) {
+        console.log(123);
         return {
-          title: 'Pug',
+          title: 'pug',
           message:  error.message
         }
        }))

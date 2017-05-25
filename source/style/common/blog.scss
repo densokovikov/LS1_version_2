@@ -1,0 +1,44 @@
+@import 'common/_header';
+
+main.blog-content{
+	width: 100%;
+	min-height: calc(100vh-145px);
+	margin: 0;
+	padding: 0;
+	&:after{
+    	content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.blog-content__sidebar{
+	float: left;
+	width: 30%;
+}
+
+.blog-content__post-wrapper{
+	width: 68%;
+	float: right;
+}
+
+.blog-content__post-title{
+	font: 400 35px/41px "BERNIERRegular";
+	color:#777A6D;
+}
+
+.blog-content__post-data{
+	font: 400 16px/41px "RobotoRegular";
+	color:#777A6D;
+}
+
+/*-------------------sidebar----------------------*/
+
+.blog-content__sidebar-item{
+	//font: 400 16px/26px "RobotoRegular";
+	color: #455a64;
+	height: 42px;
+	cursor: pointer;
+}
+
+@import 'common/_footer';

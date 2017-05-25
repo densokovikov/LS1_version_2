@@ -1,0 +1,30 @@
+header.header-common
+	.header-common__wrap_soc
+		.header-common__soc-icons
+			ul.header-common__icons-list
+				li.header-common__icons-item
+					a.header-common__icons-link(href="https://vk.com" target="_blank")
+						svg.icon.vk.hc__colors-icons
+							use(xlink:href='assets/icons/sprite.svg#vk')
+				li.header-common__icons-item
+					a.header-common__icons-link(href="https://githab.com" target="_blank")
+						svg.icon.github.hc__colors-icons
+							use(xlink:href='assets/icons/sprite.svg#github')
+				li.header-common__icons-item
+					a.header-common__icons-link(href="https://www.linkedin.com" target="_blank")
+						svg.icon.in.hc__colors-icons
+							use(xlink:href='assets/icons/sprite.svg#in')
+		.burger-menu
+			.burger
+	.header-common_wrap-desc
+		.header-common__ava
+			img.header-common__my-foto(src="../assets/img/my_foto.jpg",alt="my_foto")
+		block common__title
+			.header-common__title Блог
+			.header-common__description Статьи, которые я написал
+			block bg_header
+				svg.icon.about_header
+					use(xlink:href='assets/icons/sprite.svg#about_header')
+	//.header-common__tr-bg
+		svg.icon.bg
+			use(xlink:href="assets/icons/sprite.svg#bg")

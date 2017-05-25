@@ -1,0 +1,185 @@
+
+.hc__colors-icons{
+    fill:rgba( $color_link,.5);
+    &:hover{
+        fill:rgba( $color_link,1);
+    }
+}
+
+.header-common{
+    position: relative;
+    background-image:  url("../img/welcome_background.jpg");
+    background-position: 50% 35%;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 58vh;
+    background-size: cover;
+    margin-bottom: 10px;
+    padding: 0;
+    
+}
+.header-common__wrap-soc:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-common__soc-icons{
+    width: 139px;
+    float: left;
+    margin-left: 300px;
+}
+
+.header-common__icons-list{
+    list-style-type: none;
+    width: 139px;
+}
+
+.header-common__icons-item{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.header-common_wrap-desc{
+    width: 210px;
+    margin: 0 auto;
+}
+
+.header-common__ava{
+    margin: 0 auto;
+    position: relative;
+    width: 141px;
+    height: 141px;
+    text-align:center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header-common__my-foto{
+    max-width: 100%;
+ }
+
+ .header-common__title{
+    position: relative;
+    color: $color_link;
+    font: 400 63px/41px "BERNIERRegular";
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
+    &:before{
+        content:'';
+        width: 21px;
+        height: 10px;
+        background: url(../img/wel_avtoriz_left.png) no-repeat center;
+        position: absolute;
+        top: 42%;
+        left: 20px;   
+    }
+    &:after{
+        content:'';
+        width: 21px;
+        height: 10px;
+        background: url(../img/wel_avtoriz_right.png) no-repeat center;
+        position: absolute;
+        top: 42%;
+        right: 20px;      
+    }   
+}
+
+.header-common__description{
+    font-family: Roboto;
+    color:$color_link;
+    text-align:center;
+}
+
+.common-style__header{
+    width: 100%;
+    height: 313px;
+    top: 54%;
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    fill: rgba($color_link, 0.2);
+    transform: translate(-50%, -50%);
+}
+
+
+/*--------burger--------------------*/
+.burger-menu {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: right;
+    margin-right: 50px;
+    padding:0;
+    z-index:99;
+}
+
+
+.burger {
+    position: absolute;
+    background: rgba($color_link,1);
+    width: 100%;
+    height: 7px;
+    top: 50%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1;
+}
+
+.burger::before {
+    position: absolute;
+    background: rgba($color_link,1);
+    width: 50px;
+    height: 7px;
+    top: 20px;
+    content: "";
+    display: block;
+ }
+
+.burger::after {
+    position: absolute;
+    background: rgba($color_link,1);
+    width: 50px;
+    height: 7px;
+    bottom: 20px;
+    content: "";
+    display: block;
+}
+
+.burger::after, .burger::before, .burger {
+    transition: all .3s ease-in-out;
+}
+.burger-menu.menu-on .burger::after{
+    transform: rotate(-45deg);
+    bottom: 0px;
+}
+.burger-menu.menu-on .burger::before{
+    transform: rotate(45deg);
+    top: 0px;
+}
+.burger-menu.menu-on .burger{
+    background: rgba(111,111,111,.0);
+}
+  /*--------burger-end------------------*/
+
+.header-common__tr-bg{
+    position: absolute;
+    bottom: -226px;
+    font-size: 0;
+    left: 0;
+    fill: rgba($color_link,1);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.bg{
+    width: 100%;
+    height: 360px;
+    fill:rgba($color_link,1)
+}

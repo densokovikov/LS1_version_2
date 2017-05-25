@@ -1,5 +1,14 @@
-body {
-  margin: 0;
-}
+/* ========pages_style==================== */
+@import 'common/main';
+//@import 'common/about';
+@import 'common/blog';
+//@import 'common/work';
 
-@import 'common/greating';
+
+
+
+/* ===========Fonts================= */
+
+
+@import "mixin/fonts";
+
